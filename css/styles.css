@@ -1,0 +1,79 @@
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+header{
+	height: 200px;
+	position: relative;
+}
+.container {
+	max-width: 1200px;
+	min-width: 600px;
+	width: 90%;
+	margin: 10px auto;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+.container h1 {
+	font-size: 1.2em;
+}
+
+input.reload {
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+header #nav {
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding: 10px;
+	width: auto;
+	display: inline-block;
+	float: right;
+}
+
+header #nav a {
+	display: block;
+	text-decoration: none;
+}
+
+header #nav a:hover,
+header #nav a:active,
+header #nav a:focus {
+	color: #000;
+}
+
+header #nav a .icon {
+	margin-left: 10px;
+}
+
+header #nav .menu {
+	margin: 0.75em 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+header #nav .menu.collapsed {
+	display: none;
+}
+
+header #nav ul.expanded {
+	display: block;
+}
+
+header #nav li {
+ display: block;
+ transition-duration: 0.5s;
+	margin-bottom: .5em;
+}
+
+header #nav li:hover {
+  cursor: pointer;
+}
+
+a, a:link, a:visited {
+	color: #2c9bda;
+}
+

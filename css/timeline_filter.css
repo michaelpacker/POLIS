@@ -1,0 +1,195 @@
+ /* CSS Document */
+
+
+/*					*/
+/*  FILTER CONTROL 	*/
+/*					*/
+/* 
+	Positioning of the filter control needs to be relative to the rest of the timeline 
+	Timeline.js uses absolute positioning to determine layout of the .tl-menubar object.
+	This positioning is relative to the #timeline-embed parent.
+
+	Inserting the filter in the flow of the document will interfere with
+	the placement of .tl-menubar by adding height to #timeline-embed.
+
+	The primary container, #timeline-embed, also sets an absolute height and
+	hides any overflow. Adding "in-flow" objects will push the timeline past
+	the bounds of #timeline-embed and hide the UI.
+
+	Timeline_filter objects are inserted into the document with absolute positioning.
+	Top values are determined by calculating the difference between height of the timeline object
+	and the height of the parent timeline-embed div. The filterContainer is placed at a top position
+	that corresponds to this difference, plus the height of the filter button, so that the button "peaks out"
+	from behind the timeline object.
+*/
+
+.tl-timenav {
+	z-index: 10;
+}
+
+#timeline-embed .tl-timenav:first-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+.tlf-filterContainer { 
+	padding: 0;
+	position: absolute;
+	left: 0;
+	z-index: 9;
+	min-width: 45%;
+	width: 60%;
+	box-sizing: border-box;
+}
+
+/* Position appropriately based on timeline configuration */
+.tlf-configurationBottom {
+	transition: top 0.3s ease-in-out;
+}
+
+.tlf-configurationTop {
+	transition: bottom 0.3s ease-in-out;
+}
+
+.tlf-filterControl {
+	background-color: rgb(242, 242, 242);
+	border: none;
+	padding: 6px 12px;
+	color: #bfbfbf;
+	font-size: 14px; /* Match timeline.js font sizes for similar objects */
+	font-weight: bold;
+	cursor: pointer;
+	transition: width 0.3s ease-out;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
+} /* Match the other timeline buttons in visual style */
+
+.tlf-filterControl:hover,
+.tlf-filterContainer.open .tlf-filterControl {
+	background: #333;
+	color: #fff;
+	
+}
+
+.tlf-filterControl .tlf-filterIcon {
+	margin-right: 10px;
+}
+
+/* Set a rounded corner on the outer corner that does not touch the timeline */
+
+.tlf-filterContainer.tlf-configurationBottom .tlf-filterControl {
+	border-top-right-radius: 10px;
+	
+}
+.tlf-filterContainer.tlf-configurationTop .tlf-filterControl {
+	border-bottom-right-radius: 10px;
+}
+
+
+/*			*/
+/*  MODAL 	*/
+/*			*/
+/* The modal which displays the filter options is a simple modal
+	All styles related to the look and feel of the modal are here
+	The modal structure consists of:
+		- Container
+		- Body (children columns, containing checklists)
+		- Footer (contains control buttons)
+*/
+
+
+/* Modal Display */
+/* The modal will "slide out" from under the timeline */
+.tlf-filterModalContainer {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+  	box-sizing: border-box;
+ 	text-align: left;
+  	z-index: 9; /* Allows filter modal to be in the page but slide under the timeline */
+	padding: 1.5em 2em; /* Top and bottom padding will be over-ridden based on timeline configuration, so this is a default */
+}
+
+.tlf-filterContainer.tlf-configurationBottom .tlf-filterModalContainer {
+	border-top-right-radius: 4px;
+}
+
+.tlf-filterContainer.tlf-configurationTop .tlf-filterModalContainer {
+	border-bottom-right-radius: 4px;
+}
+
+.tl-timeline .tlf-filterModalContainer h3 {
+	margin-top: 0;
+	margin-bottom: .25em;
+	font-size: 15px; /* Match timeline.js font sizes */
+}
+
+.tlf-filterModalBody {
+	float: left; /* Float to contain a float */
+	width: 100%;
+	padding-bottom: 1em;
+}
+
+/* Filter Lists */
+.tlf-column {
+	float: left;
+}
+.tlf-column-one {
+	width: 48%;
+	margin-right: 4%;
+}
+.tlf-column-two {
+	width: 48%;
+}
+
+.tlf-column .tlf-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: .25em;
+}
+
+.tlf-column .tlf-list label {
+	display: block;
+	float: left;
+	margin-left: 18px;
+	margin-bottom: 0.3em;
+	width: 100%;
+	font-size: 15px; /* Match timeline.js font sizes */
+}
+
+.tlf-column .tlf-list input[type="checkbox"] {
+	margin-left: -18px;
+}
+
+
+/* Modal Footer */
+.tlf-filterModalFooter {
+	clear: both;
+}
+
+.tlf-filterModalFooter {
+	text-align: right;
+}
+.tlf-filterModalFooter .tlf-modalButton {
+	margin-right: .5em;
+	border: none;
+	background-color: none;
+	background: none;
+	font-size: 15px;
+	color: rgb(115, 115, 115); /* Match timleine.js text color */
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.tlf-filterModalFooter .tlf-modalButton:hover,
+.tlf-filterModalFooter .tlf-modalButton:focus,
+.tlf-filterModalFooter .tlf-modalButton:active {
+	text-decoration: underline;
+}
+
+.tlf-filterModalFooter .tlf-modalButton.tlf-modalButtonAction {
+	color: #0052cc;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Timline Filter - 100 Events</title>
+		<!-- Generic styles for laying out the test site -->
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />
+		<!-- Styles related directly to the filter -->
+		<link type="text/css" rel="stylesheet" href="css/timeline_filter.css" />
+		<!-- Font Awesome for filter icon -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		
+		<!-- Timeline.js css and javascript -->
+		<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+		<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+	
+		<!-- jQuery for the filter js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="clearfix">
+        	<div class="container">
+				<h1>N420 Knightslab Timeline.js Filter Extension</h1>
+				<p>100 Events - 1800 to Present Day</p>
+        	</div>
+		</header>
+            <div id="main" class="container"> 
+				<!-- Timeline.js will load into this div -->
+            	<div id="timeline-embed" style="width: 100%; height: 600px"></div>
+			
+			</div>
+            <footer>
+                <div class="container">
+                    <p>Spring 2019 - Michael Packer, Peyton Chester, Elizabeth Massaquoi</p>
+					<div id="message"></div>
+                </div>
+            </footer>
+			<script type="text/javascript">
+				// The TL.Timeline constructor takes at least two arguments:
+				// the id of the Timeline container (no '#'), and
+				// the URL to your JSON data file or Google spreadsheet.
+				// the id must refer to an element "above" this code,
+				// and the element must have CSS styling to give it width and height
+				// optionally, a third argument with configuration options can be passed.
+				// See below for more about options.
+				// timeline = new TL.Timeline('timeline-embed','js/timeline_100_events.json');
+				timeline = new TL.Timeline('timeline-embed','js/timeline.json', options = {timenav_position: 'top'});
+			  </script>
+              <!-- this must come after the timeline is rendered -->
+       		<script src="js/timeline_filter.js" type="text/javascript"></script>
+    </body>
+</html>

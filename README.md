@@ -11,6 +11,13 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
 FontAwesome: 
 https://fontawesome.com/start
 
+About the files here
+All HTML, css and js files needed to display the test data and images are here as /css and /js
+
+About GEN.PHP
+This file is used to generate a JSON file of dummy data, which can be used for testing purposes. The JSON file will be called timeline_gen.json. gen.php relies on files in includes/ (header_gen.php and footer_gen.php). Either a local server will need to be running or the file should be on a web server to generate the JSON file.
+
+
 About the extension
 The Timeline.js Filter Extension is written as a companion to the Timeline.js product, as created 
 by Knightslab from Northwestern University (http://timeline.knightlab.com/). 
@@ -40,3 +47,5 @@ markers they wish to see based on which group or era the marker falls within.
 
 When selecting a group, era or combination of both, the filter will hide all other markers on the timeline, allowing 
 the user a clearer picture of events.
+
+
