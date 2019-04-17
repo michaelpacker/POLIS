@@ -20,7 +20,7 @@ function waitForPageLoad() {
 
 		// Get the data from the JSON file
 		$.ajax({
-			url: 'js/timeline_motext.json',
+			url: 'js/timeline.json',
 			dataType: 'json',
 			type: 'get',
 			cache: 'false',
