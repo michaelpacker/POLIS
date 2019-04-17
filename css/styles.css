@@ -1,5 +1,7 @@
 body {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 header{
@@ -7,9 +9,8 @@ header{
 	position: relative;
 }
 .container {
-	max-width: 1200px;
+	max-width: 1030px;
 	min-width: 600px;
-	width: 90%;
 	margin: 10px auto;
 	background-color: #FFFFFF;
 	padding: 10px;
@@ -59,7 +60,7 @@ header #nav .menu.collapsed {
 	display: none;
 }
 
-header #nav ul.expanded {
+header #nav .menu.expanded {
 	display: block;
 }
 
@@ -76,4 +77,176 @@ header #nav li:hover {
 a, a:link, a:visited {
 	color: #2c9bda;
 }
+
+
+/* IUPUI RELATED STYLES FOR THE PURPOSES OF MOCKUP - NOT FOR PRODUCTION */
+/* Use IUPUI FRAMEWORK AS REQUIRED */
+
+body.iupui {
+	font-family: BentonSansRegular,Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+}
+
+.iupui .subheader, body.iupui, .iupui code {
+    font-weight: 400;
+}
+
+.iupui a {
+background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.iupui .site-header .title {
+    margin-bottom: 0;
+	color: #4A3C31;
+    margin-top: 16px;
+	font-family: BentonSansBold,Arial,sans-serif;
+    font-weight: 400;
+}
+.h1, .site-header .title {
+    font-size: 1.75rem;
+}
+
+@media screen and (min-width: 40em) {
+  .iupui .h1, .iupui .site-header .title {
+       font-size: 2.75rem;
+  }
+}
+
+.iupui.branding-bar {
+	background-image: url(../img/iupui_branding/iupui_brandingbar.png), url(../img/iupui_branding/iupui_brandingbar_stripe.png);
+	background-repeat: no-repeat, repeat-x;
+	background-position: center, left top;
+	max-height: 75px;
+	height: 75px;
+	min-width: 1030px;
+	
+}
+
+.iupui .site-header {
+	padding-top: .625rem;
+	padding-bottom: .625rem;
+	border-bottom: 3px solid rgba(74,60,49,.3);
+}
+
+
+.iupui h1 {
+	font-size: 2.75rem;
+}
+
+.iupui h1, .iupui h2, .iupui h3, .iupui h4, .iupui h5, .iupui h6 {
+    font-family: BentonSansBold,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    margin-top: 0;
+    line-height: 1.15;
+}
+
+
+dl, h1, h2, h3, h4, h5, h6, ol, p, ul {
+    margin-bottom: 1.25rem;
+}
+
+blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-rendering: optimizeLegibility;
+}
+
+
+
+.iupui .row, .iupui .section {
+    position: relative;
+}
+
+.iupui .row {
+    max-width: 995px; /* Lining up with branding bar image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iupui .row.pad {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.iupui-timeline-nav {
+	background-color: #990000;
+	color: #fff;
+	margin: .625rem auto;
+	padding: 8px auto 8px auto;
+}
+
+.iupui nav.iupui-timeline-nav a {
+	margin-right: 10px;
+}
+
+.iupui nav.iupui-timeline-nav .iupui-timeline-sub {
+	margin-left: 10px;
+}
+
+.iupui nav.iupui-timeline-nav a,
+.iupui nav.iupui-timeline-nav a:link,
+.iupui nav.iupui-timeline-nav a:visited
+ {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+.iupui nav.iupui-timeline-nav a:active,
+.iupui nav.iupui-timeline-nav a:focus,
+.iupui nav.iupui-timeline-nav a:hover {
+	text-decoration: underline;
+}
+
+.iupui footer.iupui-footer {
+	margin-top: 4em;
+	background-image: url(../img/iupui_branding/iupui_footer.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	max-height: 521px;
+	height: 521px;
+	min-width: 1000px;
+	background-color: #4A3C31;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
