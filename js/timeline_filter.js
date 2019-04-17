@@ -39,7 +39,7 @@ function waitForPageLoad() {
 	
 	// Get the data from the JSON file
 	$.ajax({
-		url: 'js/timeline.json',
+		url: 'js/timeline_motext.json',
 		dataType: 'json',
 		type: 'get',
 		cache: 'false',
@@ -165,6 +165,15 @@ function waitForPageLoad() {
 				// formatting created by timeline.js IDs
 				// We will be matching ID values later on
 				var thisHeadline = value.text.headline.toLowerCase().trim();
+				// Remove commas
+				thisHeadline = thisHeadline.replace(/,/g,"");
+				// Remove periods
+				thisHeadline = thisHeadline.replace(/\./g, "");
+				// Remove apostrophes
+				thisHeadline = thisHeadline.replace(/'/g, "");
+				// Replace dollar sign with underscore
+				thisHeadline = thisHeadline.replace(/\$/g, "_");
+				// Replace spaces with dashes
 				thisHeadline = thisHeadline.replace(/\s+/g, '-');
 
 				// Make an array specific to this loop
