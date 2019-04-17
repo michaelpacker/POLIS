@@ -52,10 +52,10 @@
 }
 
 .tlf-filterControl {
-	background-color: rgb(242, 242, 242);
+	background-color: rgb(237, 235, 235);
 	border: none;
 	padding: 6px 12px;
-	color: #bfbfbf;
+	color: #D0CFD0;
 	font-size: 14px; /* Match timeline.js font sizes for similar objects */
 	font-weight: bold;
 	cursor: pointer;
@@ -67,7 +67,7 @@
 
 .tlf-filterControl:hover,
 .tlf-filterContainer.open .tlf-filterControl {
-	background: #333;
+	background-color: #990000;
 	color: #fff;
 	
 }
@@ -76,6 +76,10 @@
 	margin-right: 10px;
 }
 
+
+.tlf-filterControl .tlf-filterButtonText {
+	font-family: 'BentonSansBold' !important;
+}
 /* Set a rounded corner on the outer corner that does not touch the timeline */
 
 .tlf-filterContainer.tlf-configurationBottom .tlf-filterControl {
@@ -155,6 +159,7 @@
 	margin-bottom: 0.3em;
 	width: 100%;
 	font-size: 15px; /* Match timeline.js font sizes */
+	font-family: 'BentonSansRegular' !important;
 }
 
 .tlf-column .tlf-list input[type="checkbox"] {
@@ -176,18 +181,19 @@
 	background-color: none;
 	background: none;
 	font-size: 15px;
-	color: rgb(115, 115, 115); /* Match timleine.js text color */
+	color: #191919; /* Match timleine.js text color */
 	cursor: pointer;
 	text-transform: uppercase;
 }
 .tlf-filterModalFooter .tlf-modalButton:hover,
 .tlf-filterModalFooter .tlf-modalButton:focus,
 .tlf-filterModalFooter .tlf-modalButton:active {
+	color: #01426A;
 	text-decoration: underline;
 }
 
 .tlf-filterModalFooter .tlf-modalButton.tlf-modalButtonAction {
-	color: #0052cc;
+	color: #006298;
 }
 
 

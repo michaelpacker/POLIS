@@ -1,0 +1,73 @@
+ /* CSS Document */
+
+
+/*					*/
+/*  FILTER CONTROL 	*/
+/*					*/
+/* 
+	Inserting text below the timeline-embed container requires little css.
+	What's here is simply for formatting. Everything can be overwritten
+*/
+
+#timeline-embed {
+	margin-bottom: 2em;
+}
+
+.tltxt-section {
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 600px;
+}
+
+.tltxt-section h3, h4 {
+	margin-bottom: .2em;
+}
+
+.tltxt-section .tltxt-body {
+	margin-top: 0;
+}
+
+
+/* READ MORE */
+
+button.tltxt-moreControl {
+	padding: 0;
+	border: none;
+	color: #006298;
+	cursor: pointer;
+	background: none;
+	background-image: none;
+	background-color: none;
+}
+
+button.tltxt-moreControl:hover,
+button.tltxt-moreControl:focus,
+button.tltxt-moreControl:active {
+	color: #01426A;
+}
+
+button.tltxt-moreControl .tltxt-toggleIcon {
+	margin-right: .25em;
+	transition: transform .3s ease-in-out;
+}
+
+.tltxt-toggleIcon.rotateRight {
+	 transform: rotate(90deg);
+}
+.tltxt-toggleIcon.rotateLeft{
+	transform: rotate(-90deg);
+}
+
+#tltxt-container {
+	overflow: hidden;
+	height: auto;
+	transition: max-height .8s ease-in-out;
+}
+
+#tltxt-container.collapsed {
+	max-height: 0;
+}
+
+#tltxt-container.opened {
+	max-height: 1200px; /* Need a hard value, even if it's huge */
+}
