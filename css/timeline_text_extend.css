@@ -10,7 +10,7 @@
 */
 
 #timeline-embed {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .tltxt-section {
@@ -27,6 +27,10 @@
 	margin-top: 0;
 }
 
+.tltxt-section {
+	margin-top: 2em;
+}
+
 
 /* READ MORE */
 
@@ -38,6 +42,7 @@ button.tltxt-moreControl {
 	background: none;
 	background-image: none;
 	background-color: none;
+	font-size: 15px;
 }
 
 button.tltxt-moreControl:hover,

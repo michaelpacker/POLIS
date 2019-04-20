@@ -6,8 +6,12 @@
       "credit": "<a href=\"https://www.iupui.edu/about/history.html\" target=\"_blank\">VISION & MISSION</a>"
     },
     "text": {
-      "headline": "<center>Creating a great university for Indianapolis, Indiana, and the world:<br/>An IUPUI Timeline</center>",
-      "text": "IUPUI was established in 1969 as a merger of Indiana University and Purdue University campuses in Indianapolis in response to a challenge by the city’s mayor to build a great state university. In the years since then, IUPUI has grown rapidly to meet the higher-education needs of the city, state, and world. It has become the premier urban research university in Indiana. IUPUI can trace its roots back to 1891, when Indiana University first offered lectures in Indianapolis. But many of the schools that became parts of IUPUI predate that event. IUPUI has a rich history that stretches far into the past. This timeline shows the development of IUPUI, first from 1969 to the present. Later, it will outline the nineteenth-century roots of IUPUI and its many parts."
+      "headline": "<center>Creating a great university for Indianapolis/Indiana, and the world:<br/>An IUPUI Timeline</center>",
+      "text": "IUPUI was established in 1969 as a merger of Indiana University and Purdue University campuses in Indianapolis in response to a challenge by the city’s mayor to build a great state university.",
+		"secondary_headline": "",
+		"secondary_text": "In the years since then, IUPUI has grown rapidly to meet the higher-education needs of the city, state, and world. It has become the premier urban research university in Indiana. IUPUI can trace its roots back to 1891, when Indiana University first offered lectures in Indianapolis. But many of the schools that became parts of IUPUI predate that event. IUPUI has a rich history that stretches far into the past. This timeline shows the development of IUPUI, first from 1969 to the present. Later, it will outline the nineteenth-century roots of IUPUI and its many parts.",
+		"tertiary_headline": "",
+		"tertiary_text": ""
     }
   },
   	"events": [
@@ -109,16 +113,15 @@
       "id": "5c9bfb6d73a3ee1848c39ff6",
       "user": "",
       "media": {
-        "url": "https://archives.iupui.edu/handle/2450/863",
+        "url": "img\/iupui\/1971_council_minutes.png",
         "caption": "IUPUI Faculty Council Minutes 1970-1971",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (https://archives.iupui.edu/handle/2450/863)"
       },
       "start_date": {
         "year": "1971",
         "month": "01",
         "day": "14"
       },
-      
       "text": {
         "headline": "IUPUI Faculty Council approved recommendation of Athl. Affairs Committee (AAC) to introduce intercollegiate sports",
         "text": "The IUPUI Faculty Council, the faculty governance body of the campus, approved the recommendation of its Athletic Affairs Committee to engage in intercollegiate sports competition.",
@@ -133,9 +136,9 @@
       "id": "5c9bfb6d73a3ee1848c39ff7",
       "user": "",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/3309/rec/3",
+        "url": "img\/iupui\/1972_nick_kellum_team.png",
         "caption": "Normal College team that won IUPUI intramural championship, 1970 (P. Nicholas Kellum, at right)",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/3309/rec/3)"
       },
       "start_date": {
         "year": "1971",
@@ -512,16 +515,15 @@
       "id": "5c9bfb6d73a3ee1848c39fe5",
       "user": "",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/7983/rec/29",
+        "url": "img\/iupui\/sagamore-newspaper.jpg",
         "caption": "Archivist Jeannette M. Matthew (right) and students hold student newspapers, 1976 UA24-006860",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/7983/rec/29)"
       },
       "start_date": {
         "year": "1971",
         "month": "07",
         "day": "16"
       },
-      
       "text": {
         "headline": "The Sagamore, IUPUI student newspaper, established",
         "text": "In July 1971, a group of IUPUI students, faculty, and administrators met to draft a plan for a single student publication.",
@@ -584,7 +586,7 @@
       "id": "5c9bfb6d73a3ee1848c39feb",
       "user": "",
       "media": {
-        "url": "",
+        "url": "img\/iupui\/Hine.jpg",
         "caption": "",
         "credit": ""
       },
@@ -656,9 +658,9 @@
       "id": "5c9bfb6d73a3ee1848c39fec",
       "user": "",
       "media": {
-        "url": "https://archives.iupui.edu/handle/2450/5838",
+        "url": "img\/iupui\/1973_committee_report.png",
         "caption": "GO Committee Preliminary Report, 1973",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (https://archives.iupui.edu/handle/2450/5838)"
       },
       "start_date": {
         "year": "1973",
@@ -703,9 +705,9 @@
       "id": "5c9bfb6d73a3ee1848c39ff4",
       "user": "",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/1167/rec/2",
+        "url": "img\/iupui\/first-graduating-class.jpg",
         "caption": "UA24-002413",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/1167/rec/2)"
       },
       "start_date": {
         "year": "1970",
@@ -827,9 +829,9 @@
       "id": "5c9bfb6d73a3ee1848c39ff5",
       "user": "",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/4929/rec/5",
+        "url": "img\/iupui\/1970_student_protest.png",
         "caption": "Black Student Union protest, ca. 1970 UA24-005101s",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/4929/rec/5)"
       },
       "start_date": {
         "year": "1970",
@@ -1019,16 +1021,15 @@
       "id": "5c9bfb6d73a3ee1848c39ff9",
       "user": "",
       "media": {
-        "url": "https://archives.iupui.edu/handle/2450/10016",
+        "url": "img\/iupui\/1972_metros_sagamore_photo.png",
         "caption": "Team photo published in Sagamore, March 13, 1972",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (https://archives.iupui.edu/handle/2450/10016)"
       },
       "start_date": {
         "year": "1972",
         "month": "01",
         "day": "22"
       },
-      
       "text": {
         "headline": "Men’s basketball team play as Metros in IU-Kokomo tournament",
         "text": "IUPUI men's basketball team played their first game using the Metros as their team name.",
@@ -1112,9 +1113,9 @@
       "id": "5c9d11f726d54f0b9c7a58c1",
       "user": "ndevadas@iupui.edu", 
       "media": { 
-        "url": "https://archives.iupui.edu/handle/2450/7555", 
+        "url": "img\/iupui\/1968_lugar_speech_text.png", 
         "caption": "Text of speech by Mayor Richard G. Lugar, 1968", 
-        "credit": "IUPUI University Library Special Collections and Archives" 
+        "credit": "IUPUI University Library Special Collections and Archives (https://archives.iupui.edu/handle/2450/7555)" 
       }, 
       "start_date": { 
         "year": "1968", 
@@ -1176,9 +1177,9 @@
       
       "text": {
         "headline": "The student governments of the 38th Street Campus, IU-Circle City Campus, Herron School of Art and the Normal College held a joint meeting.",
-        "text": "The purpose of the meeting was to discuss how the merger would affect their groups.",
-        "secondary_headline": "Ad Hoc Committee",
-        "secondary_text": "At the meeting, students created the Ad Hoc Committee on Student Solidarity to explore avenues open to students and to draft a new student government.",
+        "text": "The purpose of the meeting was to discuss how the merger would affect their groups. At the meeting, students created the Ad Hoc Committee on Student Solidarity to explore avenues open to students and to draft a new student government.",
+        "secondary_headline": "",
+        "secondary_text": "",
         "tertiary_headline": "",
         "tertiary_text": ""
       },
@@ -1230,9 +1231,9 @@
       "id": "5ca77f9891c47b13c0040a7e",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/4739/rec/4",
+        "url": "img\/iupui\/1970_dr_morris_green.jpg",
         "caption": "Dr. Morris Green and patient, 1970s UA24-002197",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/4739/rec/4)"
       },
       "start_date": {
         "year": "1971",
@@ -1980,9 +1981,9 @@
       
       "text": {
         "headline": "Indiana and Purdue University Presidents Agreed to Merge Indianapolis Campuses",
-        "text": "After Mayor Richard Lugar called for establishment of an independent state university for Indianapolis, the presidents of Purdue and IU met in secret in late December and agreed to a merger.",
-        "secondary_headline": "Ratified Merger",
-        "secondary_text": "The Boards of Trustees of the two universities quickly ratified the merger. IUPUI was born on January 24, 1969.",
+        "text": "After Mayor Richard Lugar called for establishment of an independent state university for Indianapolis, the presidents of Purdue and IU met in secret in late December and agreed to a merger. The Boards of Trustees of the two universities quickly ratified the merger. IUPUI was born on January 24, 1969.",
+        "secondary_headline": "",
+        "secondary_text": "",
         "tertiary_headline": "",
         "tertiary_text": ""
       },
@@ -1992,9 +1993,9 @@
       "id": "5caa12dac3b9410d788886eb",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "ttp://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/1147/rec/1",
+        "url": "img\/iupui\/1969_jack_ryder.png",
         "caption": "Dr. John C. Buhner, 1977 UA24-002443",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/1147/rec/1)"
       },
       "start_date": {
         "year": "1969",
@@ -2016,9 +2017,9 @@
       "id": "5caa13c8c3b9410d788886ec",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/9273/rec/296",
+        "url": "img\/iupui\/1970_columbus_sign.png",
         "caption": "IUPUC sign, 1978 1078-0570-001",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/9273/rec/296)"
       },
       "start_date": {
         "year": "1970",
@@ -2050,9 +2051,9 @@
       
       "text": {
         "headline": "IU Assumed administrative control of IUPUI",
-        "text": "After a two-year period during which leaders sorted and reorganized the administrative and academic functions of the Indianapolis campuses of Indiana University and Purdue University, IU assumed overall responsibility for management of IUPUI.",
-        "secondary_headline": "Administrative Functions",
-        "secondary_text": "IUPUI chancellor Maynard K. Hine placed all administrative functions under business manager Arthur D. Lautzenheiser.",
+        "text": "After a two-year period during which leaders sorted and reorganized the administrative and academic functions of the Indianapolis campuses of Indiana University and Purdue University, IU assumed overall responsibility for management of IUPUI. IUPUI chancellor Maynard K. Hine placed all administrative functions under business manager Arthur D. Lautzenheiser.",
+        "secondary_headline": "",
+        "secondary_text": "",
         "tertiary_headline": "",
         "tertiary_text": ""
       },
@@ -2062,9 +2063,9 @@
       "id": "5caa152ac3b9410d788886ee",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/1157/rec/45",
+        "url": "img\/iupui\/irwin-leadin.jpg",
         "caption": "",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/1157/rec/45)"
       },
       "start_date": {
         "year": "1973"
@@ -2084,9 +2085,9 @@
       "id": "5caa15e0c3b9410d788886ef",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "",
+        "url": "img\/iupui\/1973_edward_moore.png",
         "caption": "",
-        "credit": ""
+        "credit": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/9328/rec/3"
       },
       "start_date": {
         "year": "1973"
@@ -2275,9 +2276,9 @@
       
       "text": {
         "headline": "Goals and Objectives Committee Formed",
-        "text": "Chancellor Maynard K. Hine formed the Goals and Objectives Committee (GO Committee) to develop a long-range plans for IUPUI.",
-        "secondary_headline": "Growth and Development",
-        "secondary_text": "Chaired by IU School of Law-Indianapolis professor James P. White, the GO Committee met frequently over several years and formulated influential plans for the growth and development of the IUPUI campus, including influential reports in 1971 and 1973.",
+        "text": "Chancellor Maynard K. Hine formed the Goals and Objectives Committee (GO Committee) to develop a long-range plans for IUPUI. Chaired by IU School of Law-Indianapolis professor James P. White, the GO Committee met frequently over several years and formulated influential plans for the growth and development of the IUPUI campus, including influential reports in 1971 and 1973.",
+        "secondary_headline": "",
+        "secondary_text": "",
         "tertiary_headline": "",
         "tertiary_text": ""
       },
@@ -3388,9 +3389,9 @@
       "id": "5caa5ab94c79860b0c8ec0cf",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/7849/rec/4",
+        "url": "img\/iupui\/1972_herron_homecoming.png",
         "caption": "Herron homecoming, 1972",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "IUPUI University Library Special Collections and Archives (http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/7849/rec/4)"
       },
       "start_date": {
         "year": "1972",
@@ -3412,7 +3413,7 @@
       "id": "5caa5b8a4c79860b0c8ec0d0",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/1013/rec/34",
+        "url": "img\/iupui\/1970_university_hospital_dedicated.jpg",
         "caption": "Chancellor Maynard K. Hine and IU President Joseph L. Sutton at dedication ceremony, 1970",
         "credit": "IUPUI University Library Special Collections and Archives"
       },
@@ -3436,9 +3437,9 @@
       "id": "5caa5cb24c79860b0c8ec0d1",
       "user": "ndevadas@iupui.edu",
       "media": {
-        "url": "http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/2211/rec/7",
+        "url": "img\/iupui\/1970_school_of_law.png",
         "caption": "School of Law building under construction, 1970",
-        "credit": "IUPUI University Library Special Collections and Archives"
+        "credit": "<a href=\"http://ulib.iupuidigital.org/cdm/singleitem/collection/IUPUIphotos/id/2211/rec/7\">IUPUI University Library Special Collections and Archives</a>"
       },
       "start_date": {
         "year": "1973"
