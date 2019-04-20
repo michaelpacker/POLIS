@@ -3,6 +3,7 @@ setTimeout(waitForPageLoad, 1000);
 
 function waitForPageLoad() {
 	$( document ).ready(function() {
+		
 	// Create global arrays for dealing with data
 	var eraInventory 			= []; // Gives us all era information
 	var eraHeadlineInventory	= []; // Gives us all era headline information
@@ -14,14 +15,14 @@ function waitForPageLoad() {
 	// On screen text
 	// Update text phrases here
 	var filterModalLaunchText 	= 'Filter Timeline';
-	var filterModalHeadlineText = 'Filter Timeline';
+	var filterModalHeadlineText = 'Filter Timeline'; // Use to popualte the headline in the modal, if one exists
 	var filterModalApplyText	= 'Apply';
 	var filterModalResetText 	= 'Reset';
 	var filterModalCancelText 	= 'Close';
 	
 	// Utility variables for creating the proper identifiers and positioning
 	var timemarker 				= 'timemarker';
-	var slidemarker				= 'slide';
+	var slidemarker				= 'slide'; // Can be used for adding attribtues to slides
 		
 	// Help handle positioning the filter container
 	// Placement of the modal is dependent on several factors, one of which is window fluidity
@@ -62,6 +63,7 @@ function waitForPageLoad() {
 		populateModal(groupCount,eraCount);
 		modalControlEvents();
 		getFilterOptions();
+		maintainModalPosition();
 	}
 	
 
@@ -175,6 +177,8 @@ function waitForPageLoad() {
 				thisHeadline = thisHeadline.replace(/\$/g, "_");
 				// Replace spaces with dashes
 				thisHeadline = thisHeadline.replace(/\s+/g, '-');
+				// Replace slash with dash
+				thisHeadline = thisHeadline.replace(/\//g,"-");
 
 				// Make an array specific to this loop
 				var eventArr = [];
@@ -310,11 +314,11 @@ function waitForPageLoad() {
 		$('#timeline-embed').append('<div class="tlf-filterContainer closed"></div>');
 		$('.tlf-filterContainer').append("<button class='tlf-filterControl' id='tlf-filterModalLabel'><span class='fas fa-filter tlf-filterIcon'></span><span class='tlf-filterButtonText' style='display: none;'>" + filterModalLaunchText + "</span></button>");
 		
-		// timeline-embed and tl-timenav have fixed heights that do not change on resize
+		// timeline-embed and tl-timenav have fixed heights that *should* not change on resize
+		// However, tl-timenav might
 		filterButtonHeight 		= $('.tlf-filterControl').outerHeight();
 		timelineEmbedHeight 	= $('#timeline-embed').outerHeight();
 		timenavHeight 			= $('.tl-timenav').outerHeight();
-		
 		
 		// Get the 'top' value for the filterContainer by finding the 'top' (height) of the timeline
 		// Then adjust for the height of the filter button
@@ -342,7 +346,7 @@ function waitForPageLoad() {
 		
 		filterButtonExpandCollapse();
 	}
-	
+	// End placeFilterButton()
 
 	// Create and place modal structure
 	// Adjust the layout of the interior of the modal here based on the presence of groups, eras or both
@@ -529,9 +533,9 @@ function waitForPageLoad() {
 		// Now that the modal is populated, store its computed height
 		filterModalHeight = $('.tlf-filterModalContainer').outerHeight();	
 	}
+	//End populateModal()
 	
-		
-		// Animates the filter button on hover/click to expand to the right
+	// Animates the filter button on hover/click to expand to the right
 	function filterButtonExpandCollapse() {
 		var expandedButtonWidth;
 		var textWidth;
@@ -570,7 +574,6 @@ function waitForPageLoad() {
 	}
 	// End filterButtonExpandCollapse()
 			
-		
 	// Capture events that should trigger the modal
 	// modalAnimate() will toggle the visibility of the modal
 	// Reset filters button is handled in getFilterOptions()
@@ -613,7 +616,8 @@ function waitForPageLoad() {
 		
 		
 	}
-	
+	// End modalControlEvents()
+		
 	function modalAnimate() {
 		// Silde the filter up or down to open/close it
 		var filterContainer = $('.tlf-filterContainer');
@@ -666,28 +670,28 @@ function waitForPageLoad() {
 	// End modalAnimate()
 	
 	function maintainModalPosition(){
-			// Only run if filter is open, true
-			if (filterModalState) {
+		// timeline.js will have a bug that resizes the timenav in some manner on window resize
+		// either the tl-timenav will increase in size or .tl-timegroup will change
+		// adjust the placement of the filter when this happens
 				
-				$(window).resize(function() {
-				// Get the height of the modal
-				var newFilterModalHeight = $('.tlf-filterModalContainer').outerHeight();
-				// see how much it changed from the original height
-					
-				var adjustedHeight = filterModalHeight - newFilterModalHeight;	
-				filterModalHeight = newFilterModalHeight;
-				
-				filterPosition = filterPosition + adjustedHeight;
-				// console.log('new position: ' + filterPosition);
-				$('.tlf-filterContainer').css('top',filterPosition);
-					
-					
-			});
-		}
-	}
-	// Mayb not be needed?
-		
+		$(window).resize(function() {
+			var newTimenavHeight = $('.tl-timenav').outerHeight();
+			var diff = newTimenavHeight - timenavHeight;
+			timenavHeight = newTimenavHeight;
 
+			if (timelineConfig === 'top') {
+				filterPosition = filterPosition - diff;
+				$('.tlf-filterContainer').css('bottom',filterPosition);
+			} else if (timelineConfig === 'bottom') {
+				filterPosition = filterPosition - diff;
+				$('.tlf-filterContainer').css('top',filterPosition);
+			}
+			
+		});
+
+	}
+	// End maintainModalPosition()
+		
 	// Handle selection of filter options
 	function getFilterOptions() {
 	// Listen for change in checklist
@@ -735,7 +739,6 @@ function waitForPageLoad() {
 		});	
 	}
 	// End getFilterOptions()
-		
 		
 	// Handle the application of the filter options
 	function applyFilter() {
@@ -805,9 +808,7 @@ function waitForPageLoad() {
 		}
 	} // End a11yClick()	
 		
-	// General Display
-	// Roll out/Roll up Filter control
-	
 	
 });
 }
+
