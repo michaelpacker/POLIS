@@ -54,6 +54,7 @@
 .tlf-filterControl {
 	background-color: rgb(237, 235, 235);
 	border: none;
+	margin: 0;
 	padding: 6px 12px;
 	color: #D0CFD0;
 	font-size: 14px; /* Match timeline.js font sizes for similar objects */
