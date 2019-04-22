@@ -594,6 +594,17 @@ function waitForPageLoad() {
 				filterButtonExpandCollapse();
 			}
 		});
+		//Hide modal when click outside modal occurs
+		
+		$(document).click(function(event) {
+			if ($(".tlf-filterContainer").hasClass('open')) {
+				if (!$(event.target).closest(".tlf-filterContainer.open,.tlf-filterContainer.open .tlf-filterControl").length) {
+					modalAnimate();
+					filterButtonExpandCollapse();
+				}
+			}
+		});
+		
 		// Hide modal on ESC key up
 		$(document).on('keyup',function(evt) {
 			if (evt.keyCode === 27) {
