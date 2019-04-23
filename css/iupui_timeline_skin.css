@@ -112,6 +112,12 @@ body {
 	background-color: #191919; /* Black */
 }
 
+.tl-timeera .tl-timeaxis-tick-text.light-text {
+	color: #fff;
+}
+.tl-timeera .tl-timeaxis-tick-text.dark-text {
+	color: #191919;
+}
 
 
 /* Slide Colors */
