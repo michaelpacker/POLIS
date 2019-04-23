@@ -54,6 +54,14 @@ About the text extension
 =======
 Once the page is loaded, timeline_text_extend.js will read through the JSON object and build an array of all text nodes.
 
-Then, when a slide is determined to be the active slide, the script will find any secondary text associated with the slide. If secondary text is found, a container will be rendered under the slide show (#timeline-embed) and the secondary text will be populated into this container.
+Then, when a slide is determined to be the active slide, the script will find any secondary/tertiary text associated with the slide. If secondary text is found, a container will be rendered under the slide show (#timeline-embed) and the secondary/tertiary text will be populated into this container.
+
+About the era fix
+=======
+When eras are displayed on the timeline, they have a colored background. Major ticks on the timeline axis will display with black text, making the date information difficult to read.
+
+The js finds the tickmarks that fall within an era. Once found, the background color of the era swatch is captured and tested for brightness. If the color is light, the text will be set to a dark color. If the background is dark, the text will be set to a light color.
+
+This is a shortcoming of timeline.js, where they do this sort of detection and color swap in plenty of other places, but don't bother here. Overall, the entire era display could use an overhaul. There's no good way to make everything readable on these swatches without major DOM and positioning manipulation.
 
 
