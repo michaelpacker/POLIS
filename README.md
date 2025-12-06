@@ -8,6 +8,7 @@ Necessary files:
 /js/timeline_filter.js
 jQuery: 
 https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+
 FontAwesome: 
 https://fontawesome.com/start
 
